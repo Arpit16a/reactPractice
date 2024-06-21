@@ -11,6 +11,8 @@ import Contact from './pages/Contact.jsx'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 import Cart from './pages/Cart.jsx'
+import SignIn from './pages/SignIn.jsx'
+import Temporary from './pages/Temporary.jsx'
 
 
 const router = createBrowserRouter([
@@ -41,6 +43,18 @@ const router = createBrowserRouter([
       {
         path: '/cart',
         element: <Cart/>
+      },
+      {
+        path: '/signin',
+        element: <SignIn/>
+      },
+      {
+        path: '/temporary',
+        element:<Temporary/>
+      },
+      {
+        path: '/arpit',
+        element:<Temporary/>
       },
     ]
   }
