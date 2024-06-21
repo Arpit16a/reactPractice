@@ -10,6 +10,7 @@ import { auth, db } from '../Firebase'
 import { useDispatch } from 'react-redux'
 import { adminStatus, login } from './store/authSlice'
 import { doc, getDoc, onSnapshot } from 'firebase/firestore'
+import Loading from './components/lottieAn/Loading'
 
 
 
@@ -41,7 +42,7 @@ function App() {
       setLoading(false)
   }
   },[])
-  return loading? null  :  
+  return loading? <Loading/>  :  
    ( <div className=' select-none'>
    <Header/>
    <CartBtn/>
